@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta name="desciption" content="Hoja de vida">
+    <meta name="keywords" content="hoja vida, curriculum vitae, ejemplo de curriuclum">
+    <meta name="author" content="Marcelo Sebastián Casco">
+    <title>Educación</title>
+     <!--Apliqué estilos a mi tabla ya que el atributo border no es soportado en HTML5-->
+    <style>
+      table{
+        border-collapse: collapse;
+
+      }
+      td,th{
+        border: 1px solid black;
+      }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Volver</a>
+
+    <header>
+        <figure>
+            <img src="C:\Users\marce\OneDrive\Escritorio\Evaluacion_Final\img\logoSVG.svg" alt="logo" height="400px" width="300px">
+        </figure>
+           <h1>Hoja de vida</h1>
+    </header>
+    <section>
+        <hgroup>
+             <h2>Datos Personales</h2>
+              <h3>Nombre: Marcelo Sebastián</h3>
+              <h3>Apellido: Casco</h3>
+              <h3>Fecha y lugar de Nacimiento : 22/12/1997 (Esquina,       Corrientes-Argentina)</h3>
+        </hgroup>
+        
+          <h1>Enlaces de Menú</h1>
+           <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="paginas_internas/experiencia.html">Experiencia</a></li>
+           </ul>
+           
+           <!--Mi tabla comienza-->
+            <h2>Educación</h2>
+        
+              <table>
+                <thead>
+                <tr>
+                   <th>Año</th>
+                   <th>Institución</th>
+                   <th>Lugar</th>
+                   <th>¿Culminó?</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                   <td>2010-2017</td>
+                   <td>Escuela Técnica N°1 Juan Ramon Vidal</td>
+                   <td>Esquina, Corientes-Argentina</td>
+                   <td>Sí</td>
+                </tr>
+                <tr>
+                   <td>2018-2019</td>
+                   <td>Next_University</td>
+                   <td>Esquina, Corrientes-Argentina</td>
+                   <td>Sí</td>
+                </tr>
+                <tr>
+                   <td>2017</td>
+                   <td>Corrientes Tenis Club (CTC)</td>
+                   <td>Corrientes, Corrientes-Argentina</td>
+                   <td>Sí</td>
+                </tr>
+                </tbody>
+
+              </table>
+              <!--Mi tabla termina-->
+              
+              <!--Aquí Comienza mi formulario-->
+            
+            <h2>Agregar Estudios</h2> 
+            
+              <form name="miformulario" id="miformulario" method="GET" autocomplete="on">
+               <label for="año"><strong>Año:</strong></label>
+                 <select name="año" id="año">
+                   <option value="2019">2019</option>
+                   <option value="2018">2018</option>
+                   <option value="2017">2017</option>
+                   <option value="2016">2016</option>
+                   <option value="2015">2015</option>
+                   <option value="1014">2014</option>
+                   <option value="1014">2013</option>
+                   <option value="1014">2012</option>
+                   <option value="1014">2011</option>
+                   <option value="1014">2010</option>
+                   <option value="1014">2009</option>
+                   <option value="1014">2008</option>
+                   <option value="1014">2007</option>
+                   <option value="1014">2006</option>
+                
+                 </select>
+  
+                 <br><br>
+                
+                <label for="institucion"><strong>Institución:</strong></label>
+                <input type="text" name="institucion" id="institucion" required>
+                
+                <br><br>
+                
+                <label for="lugar"><strong>Lugar:</strong></label>
+                
+                <br>
+                
+                <textarea name="lugar" id="lugar" cols="33" rows="5"></textarea> 
+                
+                <br><br>
+                
+                <input type="submit" value="Enviar">
+
+              </form> 
+
+              <!--Fin del formulario-->
+    </section>
+    
+    <footer>
+        <h2>Contáctame</h2>
+          <address>
+            <a href="joose.hernandez@gmail.com">Correo</a> | <a href="https://www.facebook.com" target="_blank">Facebook</a> | Tel:254787332
+          </address> 
+    </footer>
+</body>
+</html>
